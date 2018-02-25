@@ -5,7 +5,7 @@ ruby '2.5.0'
 gem 'rails', '~> 5.1.0'
 
 # ActiveRecord
-gem 'pg'
+gem 'pg', '~> 0.21'
 
 # Orchestration
 gem 'puma'
