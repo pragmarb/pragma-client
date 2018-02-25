@@ -2,6 +2,9 @@
 
 Welcome to Pragma::Client, a gem for implementing clients for Pragma-based APIs.
 
+The clients you can build with this gem are very similar to [Stripe's Ruby client](https://github.com/stripe/stripe-ruby)
+in features and behavior.
+
 ## Installation
 
 Add this line to your application's Gemfile:
