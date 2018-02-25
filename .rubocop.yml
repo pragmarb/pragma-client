@@ -15,6 +15,7 @@ AllCops:
    - 'config/**/*'
    - '**/Rakefile'
    - '**/Gemfile'
+   - 'dummy/**/*'
 
 RSpec/DescribeClass:
   Exclude:
