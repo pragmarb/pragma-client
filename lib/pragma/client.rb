@@ -1,4 +1,6 @@
-require "pragma/client/version"
+# frozen_string_literal: true
+
+require 'pragma/client/version'
 
 module Pragma
   module Client
