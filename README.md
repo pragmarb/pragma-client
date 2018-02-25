@@ -24,7 +24,67 @@ $ gem install pragma-client
 
 ## Usage
 
-TODO: Write usage instructions here
+### Configuring clients
+
+First of all, you should define your base resource class:
+
+```ruby
+module BlogService
+  class Resource < Pragma::Client::Resource
+    # Define the root URL of the API.
+    self.root_url = 'https://www.example.com/api/v1'
+    
+    # Define authentication logic.
+    authenticate_with do |request|
+      request.query_params[:api_key] = '...'
+      # or maybe:
+      request.headers['Authorization'] = 'Bearer ...' 
+    end
+  end
+end
+```
+
+Now, you can start creating API resources:
+
+```ruby
+module BlogService
+  class Category < Resource
+    # Optional: This will be inferred if not provided.
+    self.base_url = '/categories'
+    
+    # This assumes you have a `by_category` filter on /articles.
+    has_many Article, filter: :by_category
+  end
+  
+  class Article < Resource
+    # This assumes you have an expandable `category` property.
+    belongs_to Category, property: :category 
+  end
+end
+```
+
+### Using clients
+
+Here are some usage examples:
+
+```ruby
+# Retrieve a category:
+category = BlogService::Category.retrieve('test-category')
+
+# Retrieve the articles of the category. This will loop through all the pages:
+category.articles.each do |article|
+  puts article.title
+end
+
+# Create a new category:
+category = BlogService::Category.create(name: 'My Category')
+
+# Create a new article in the category:
+category.articles.create(
+  title: 'New Article', 
+  body: 'This is the body of my article',
+) 
+```
 
 ## Contributing
 
