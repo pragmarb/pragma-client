@@ -1,0 +1,12 @@
+SECRET_KEY_BASE: YourSecretKeyBase
+CORS_ORIGINS: '*'
+HOST: example.com
+PROTOCOL: https
+MAIL_SENDER: noreply@example.com
+SENDGRID_USERNAME: YourSendgridUsername
+SENDGRID_PASSWORD: YourSendgridPassword
+MAIL_DOMAIN: example.com
+BUGSNAG_API_KEY: YourApiKey
+BUGSNAG_RELEASE_STAGE: dev
+REDIS_PROVIDER: REDIS_URL
+REDIS_URL: redis://localhost:6379

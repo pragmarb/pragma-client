@@ -9,3 +9,24 @@
 
 # rspec failure tracking
 .rspec_status
+
+# Ignore bundler config.
+/dummy/.bundle
+
+# Ignore the default SQLite database.
+/dummy/db/*.sqlite3
+/dummy/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/dummy/log/*
+/dummy/tmp/*
+!/dummy/log/.keep
+!/dummy/tmp/.keep
+
+# Ignore configuration files.
+/dummy/config/database.yml
+/dummy/config/application.yml
+/dummy/Procfile.local
+
+# Ignore RSpec files.
+/dummy/spec/examples.txt

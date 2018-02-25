@@ -104,3 +104,10 @@ RSpec/MessageSpies:
 Naming/FileName:
   Exclude:
     - '*.gemspec'
+
+Style/GuardClause:
+  Enabled: false
+
+RSpec/DescribeClass:
+  Exclude:
+    - 'spec/integration/**/*'

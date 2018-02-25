@@ -1,0 +1,4 @@
+<%= t(
+  'devise.mailer.confirmation_instructions.body_html',
+  confirmation_url: ENV.fetch('FRONTEND_CONFIRMATION_URL').gsub('%{confirmation_token}', @token)
+) %>
