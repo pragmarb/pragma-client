@@ -109,3 +109,4 @@ mailing lists is expected to follow the [code of conduct](https://github.com/pra
 - [ ] Error handling
 - [ ] Associations
 - [ ] Timeouts/retries/exponential backoff
+- [ ] Unit tests?
