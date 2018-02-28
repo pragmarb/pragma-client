@@ -92,7 +92,6 @@ module Pragma
         # Note that the resource that is returned is built with the payload that the server
         # responds with, so that any properties computed by the server are loaded correctly.
         #
-        #
         # @param [String|Integer] id the ID of the resource to patch
         # @param [Hash] diff the patch to apply to the resource
         # @param [Hash] params params to forward to the API
