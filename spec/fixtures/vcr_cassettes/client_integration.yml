@@ -513,4 +513,1361 @@ http_interactions:
       string: '{"type":"article","id":6,"title":"Article 6","category":6,"created_at":1519584545,"updated_at":1519584545}'
     http_version: 
   recorded_at: Sun, 25 Feb 2018 19:15:49 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b7df255e9a522a5bfde162f709c42949"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9bc78548-67e4-4d25-9988-2d58829382ff
+      X-Runtime:
+      - '0.325344'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"category","id":1,"name":"Category 1","created_at":1519584544,"updated_at":1519584544}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:08:44 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4f4bafda01ee55a60f2962af5fa98ace"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c02b2224-8dc4-4c25-a398-932340035d08
+      X-Runtime:
+      - '0.042486'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"list","data":[{"type":"category","id":62,"name":"Category
+        62","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":61,"name":"Category
+        61","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":60,"name":"Category
+        60","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":59,"name":"Category
+        59","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":58,"name":"Category
+        58","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":57,"name":"Category
+        57","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":56,"name":"Category
+        56","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":55,"name":"Category
+        55","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":54,"name":"Category
+        54","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":53,"name":"Category
+        53","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":52,"name":"Category
+        52","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":51,"name":"Category
+        51","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":50,"name":"Category
+        50","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":49,"name":"Category
+        49","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":48,"name":"Category
+        48","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":47,"name":"Category
+        47","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":46,"name":"Category
+        46","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":45,"name":"Category
+        45","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":44,"name":"Category
+        44","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":43,"name":"Category
+        43","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":42,"name":"Category
+        42","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":41,"name":"Category
+        41","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":40,"name":"Category
+        40","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":39,"name":"Category
+        39","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":38,"name":"Category
+        38","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":37,"name":"Category
+        37","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":36,"name":"Category
+        36","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":35,"name":"Category
+        35","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":34,"name":"Category
+        34","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":33,"name":"Category
+        33","created_at":1519584545,"updated_at":1519584545}],"total_entries":62,"per_page":30,"total_pages":3,"previous_page":null,"current_page":1,"next_page":2}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:12:37 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 9f0f7ae1-0f90-45f3-9e16-f37e5246f7fe
+      X-Runtime:
+      - '0.010103'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"error_type":"not_found","error_message":"The requested resource could
+        not be found.","meta":{}}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:14:01 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - caef95a4-9a63-41f5-80d0-f3dc9d5c6162
+      X-Runtime:
+      - '0.007695'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"error_type":"not_found","error_message":"The requested resource could
+        not be found.","meta":{}}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:14:11 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles?by_category=1&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"e671bd511b5e8f869cda791fd72e1d18"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b5ef6df7-90f9-4c50-942f-da7ed8487d33
+      X-Runtime:
+      - '0.078315'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"list","data":[{"type":"article","id":1,"title":"Article 1","category":1,"created_at":1519584545,"updated_at":1519584545},{"type":"article","id":63,"title":"Hello
+        world","category":1,"created_at":1519585916,"updated_at":1519585916},{"type":"article","id":64,"title":"Hello
+        world","category":1,"created_at":1519586080,"updated_at":1519586080}],"total_entries":3,"per_page":30,"total_pages":1,"previous_page":null,"current_page":1,"next_page":null}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:17:06 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"de540276fc19de648f487d9aeb376fe0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6f356fba-48a9-4ced-9f2a-c256d577e3a8
+      X-Runtime:
+      - '0.021474'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"category","id":3,"name":"Category 3","created_at":1519584545,"updated_at":1519584545}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:17:27 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles?by_category=3&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d171c80d975a8a026f3b594eb8a3290d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 801eac5a-d4bd-407d-8b21-6f8935b66dbc
+      X-Runtime:
+      - '0.083804'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"list","data":[{"type":"article","id":3,"title":"Article 3","category":3,"created_at":1519584545,"updated_at":1519584545}],"total_entries":1,"per_page":30,"total_pages":1,"previous_page":null,"current_page":1,"next_page":null}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:17:27 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b7df255e9a522a5bfde162f709c42949"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5a22cd8c-8074-408c-a899-42e0bd5a73c2
+      X-Runtime:
+      - '0.011504'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"category","id":1,"name":"Category 1","created_at":1519584544,"updated_at":1519584544}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:19:54 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b7df255e9a522a5bfde162f709c42949"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9a054210-9d00-43a4-ade4-76f02daaa235
+      X-Runtime:
+      - '0.011891'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"category","id":1,"name":"Category 1","created_at":1519584544,"updated_at":1519584544}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:19:55 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2985bf67dfbcf1d3394defc000281f13"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d94446f2-b65b-4c22-b69f-eb10b5d8bc69
+      X-Runtime:
+      - '0.015516'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"article","id":7,"title":"Article 7","category":7,"created_at":1519584545,"updated_at":1519584545}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:25 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2985bf67dfbcf1d3394defc000281f13"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 01dfa6e9-fa33-4074-ba11-7ccd36e3471d
+      X-Runtime:
+      - '0.013567'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"article","id":7,"title":"Article 7","category":7,"created_at":1519584545,"updated_at":1519584545}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:37 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2985bf67dfbcf1d3394defc000281f13"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 36540da0-7131-41df-a045-f516c7647037
+      X-Runtime:
+      - '0.012569'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"article","id":7,"title":"Article 7","category":7,"created_at":1519584545,"updated_at":1519584545}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:41 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4f4bafda01ee55a60f2962af5fa98ace"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 567f6fa6-acfc-4fd3-90c1-f6189828e570
+      X-Runtime:
+      - '0.042581'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"list","data":[{"type":"category","id":62,"name":"Category
+        62","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":61,"name":"Category
+        61","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":60,"name":"Category
+        60","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":59,"name":"Category
+        59","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":58,"name":"Category
+        58","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":57,"name":"Category
+        57","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":56,"name":"Category
+        56","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":55,"name":"Category
+        55","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":54,"name":"Category
+        54","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":53,"name":"Category
+        53","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":52,"name":"Category
+        52","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":51,"name":"Category
+        51","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":50,"name":"Category
+        50","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":49,"name":"Category
+        49","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":48,"name":"Category
+        48","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":47,"name":"Category
+        47","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":46,"name":"Category
+        46","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":45,"name":"Category
+        45","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":44,"name":"Category
+        44","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":43,"name":"Category
+        43","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":42,"name":"Category
+        42","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":41,"name":"Category
+        41","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":40,"name":"Category
+        40","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":39,"name":"Category
+        39","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":38,"name":"Category
+        38","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":37,"name":"Category
+        37","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":36,"name":"Category
+        36","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":35,"name":"Category
+        35","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":34,"name":"Category
+        34","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":33,"name":"Category
+        33","created_at":1519584545,"updated_at":1519584545}],"total_entries":62,"per_page":30,"total_pages":3,"previous_page":null,"current_page":1,"next_page":2}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:41 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2985bf67dfbcf1d3394defc000281f13"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8dfc3a1c-9e32-4e73-8c2f-ce361c0dd069
+      X-Runtime:
+      - '0.013111'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"article","id":7,"title":"Article 7","category":7,"created_at":1519584545,"updated_at":1519584545}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:42 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4f4bafda01ee55a60f2962af5fa98ace"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 34d0f4b8-d606-4f53-817f-a17973013e81
+      X-Runtime:
+      - '0.040023'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"list","data":[{"type":"category","id":62,"name":"Category
+        62","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":61,"name":"Category
+        61","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":60,"name":"Category
+        60","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":59,"name":"Category
+        59","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":58,"name":"Category
+        58","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":57,"name":"Category
+        57","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":56,"name":"Category
+        56","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":55,"name":"Category
+        55","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":54,"name":"Category
+        54","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":53,"name":"Category
+        53","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":52,"name":"Category
+        52","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":51,"name":"Category
+        51","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":50,"name":"Category
+        50","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":49,"name":"Category
+        49","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":48,"name":"Category
+        48","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":47,"name":"Category
+        47","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":46,"name":"Category
+        46","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":45,"name":"Category
+        45","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":44,"name":"Category
+        44","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":43,"name":"Category
+        43","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":42,"name":"Category
+        42","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":41,"name":"Category
+        41","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":40,"name":"Category
+        40","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":39,"name":"Category
+        39","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":38,"name":"Category
+        38","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":37,"name":"Category
+        37","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":36,"name":"Category
+        36","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":35,"name":"Category
+        35","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":34,"name":"Category
+        34","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":33,"name":"Category
+        33","created_at":1519584545,"updated_at":1519584545}],"total_entries":62,"per_page":30,"total_pages":3,"previous_page":null,"current_page":1,"next_page":2}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:42 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2985bf67dfbcf1d3394defc000281f13"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e1d10105-910b-40eb-92c0-7a7b21093b09
+      X-Runtime:
+      - '0.013562'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"article","id":7,"title":"Article 7","category":7,"created_at":1519584545,"updated_at":1519584545}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:43 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4f4bafda01ee55a60f2962af5fa98ace"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 60d07809-62b8-43b1-b069-07417253f6c5
+      X-Runtime:
+      - '0.039855'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"list","data":[{"type":"category","id":62,"name":"Category
+        62","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":61,"name":"Category
+        61","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":60,"name":"Category
+        60","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":59,"name":"Category
+        59","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":58,"name":"Category
+        58","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":57,"name":"Category
+        57","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":56,"name":"Category
+        56","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":55,"name":"Category
+        55","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":54,"name":"Category
+        54","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":53,"name":"Category
+        53","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":52,"name":"Category
+        52","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":51,"name":"Category
+        51","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":50,"name":"Category
+        50","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":49,"name":"Category
+        49","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":48,"name":"Category
+        48","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":47,"name":"Category
+        47","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":46,"name":"Category
+        46","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":45,"name":"Category
+        45","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":44,"name":"Category
+        44","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":43,"name":"Category
+        43","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":42,"name":"Category
+        42","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":41,"name":"Category
+        41","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":40,"name":"Category
+        40","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":39,"name":"Category
+        39","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":38,"name":"Category
+        38","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":37,"name":"Category
+        37","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":36,"name":"Category
+        36","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":35,"name":"Category
+        35","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":34,"name":"Category
+        34","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":33,"name":"Category
+        33","created_at":1519584545,"updated_at":1519584545}],"total_entries":62,"per_page":30,"total_pages":3,"previous_page":null,"current_page":1,"next_page":2}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:43 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2985bf67dfbcf1d3394defc000281f13"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3f7c18d1-7c5e-4fd5-a64d-025607530fb5
+      X-Runtime:
+      - '0.016218'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"article","id":7,"title":"Article 7","category":7,"created_at":1519584545,"updated_at":1519584545}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:44 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4f4bafda01ee55a60f2962af5fa98ace"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 67603fe8-6128-4847-a544-2b7f493d102b
+      X-Runtime:
+      - '0.039301'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"list","data":[{"type":"category","id":62,"name":"Category
+        62","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":61,"name":"Category
+        61","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":60,"name":"Category
+        60","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":59,"name":"Category
+        59","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":58,"name":"Category
+        58","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":57,"name":"Category
+        57","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":56,"name":"Category
+        56","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":55,"name":"Category
+        55","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":54,"name":"Category
+        54","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":53,"name":"Category
+        53","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":52,"name":"Category
+        52","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":51,"name":"Category
+        51","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":50,"name":"Category
+        50","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":49,"name":"Category
+        49","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":48,"name":"Category
+        48","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":47,"name":"Category
+        47","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":46,"name":"Category
+        46","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":45,"name":"Category
+        45","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":44,"name":"Category
+        44","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":43,"name":"Category
+        43","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":42,"name":"Category
+        42","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":41,"name":"Category
+        41","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":40,"name":"Category
+        40","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":39,"name":"Category
+        39","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":38,"name":"Category
+        38","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":37,"name":"Category
+        37","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":36,"name":"Category
+        36","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":35,"name":"Category
+        35","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":34,"name":"Category
+        34","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":33,"name":"Category
+        33","created_at":1519584545,"updated_at":1519584545}],"total_entries":62,"per_page":30,"total_pages":3,"previous_page":null,"current_page":1,"next_page":2}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:44 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2985bf67dfbcf1d3394defc000281f13"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0fa85267-9e10-43eb-a57b-99fa27591deb
+      X-Runtime:
+      - '0.013243'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"article","id":7,"title":"Article 7","category":7,"created_at":1519584545,"updated_at":1519584545}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:45 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4f4bafda01ee55a60f2962af5fa98ace"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e18a6065-4982-4f6d-b8da-46f0f0790565
+      X-Runtime:
+      - '0.040102'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"list","data":[{"type":"category","id":62,"name":"Category
+        62","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":61,"name":"Category
+        61","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":60,"name":"Category
+        60","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":59,"name":"Category
+        59","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":58,"name":"Category
+        58","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":57,"name":"Category
+        57","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":56,"name":"Category
+        56","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":55,"name":"Category
+        55","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":54,"name":"Category
+        54","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":53,"name":"Category
+        53","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":52,"name":"Category
+        52","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":51,"name":"Category
+        51","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":50,"name":"Category
+        50","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":49,"name":"Category
+        49","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":48,"name":"Category
+        48","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":47,"name":"Category
+        47","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":46,"name":"Category
+        46","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":45,"name":"Category
+        45","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":44,"name":"Category
+        44","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":43,"name":"Category
+        43","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":42,"name":"Category
+        42","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":41,"name":"Category
+        41","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":40,"name":"Category
+        40","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":39,"name":"Category
+        39","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":38,"name":"Category
+        38","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":37,"name":"Category
+        37","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":36,"name":"Category
+        36","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":35,"name":"Category
+        35","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":34,"name":"Category
+        34","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":33,"name":"Category
+        33","created_at":1519584545,"updated_at":1519584545}],"total_entries":62,"per_page":30,"total_pages":3,"previous_page":null,"current_page":1,"next_page":2}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:45 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2985bf67dfbcf1d3394defc000281f13"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 47af048c-11c5-4e52-a1c4-c2257274d198
+      X-Runtime:
+      - '0.013490'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"article","id":7,"title":"Article 7","category":7,"created_at":1519584545,"updated_at":1519584545}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:46 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"4f4bafda01ee55a60f2962af5fa98ace"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f35fe55e-f215-49f6-8088-60627d8ed25c
+      X-Runtime:
+      - '0.038750'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"list","data":[{"type":"category","id":62,"name":"Category
+        62","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":61,"name":"Category
+        61","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":60,"name":"Category
+        60","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":59,"name":"Category
+        59","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":58,"name":"Category
+        58","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":57,"name":"Category
+        57","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":56,"name":"Category
+        56","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":55,"name":"Category
+        55","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":54,"name":"Category
+        54","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":53,"name":"Category
+        53","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":52,"name":"Category
+        52","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":51,"name":"Category
+        51","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":50,"name":"Category
+        50","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":49,"name":"Category
+        49","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":48,"name":"Category
+        48","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":47,"name":"Category
+        47","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":46,"name":"Category
+        46","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":45,"name":"Category
+        45","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":44,"name":"Category
+        44","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":43,"name":"Category
+        43","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":42,"name":"Category
+        42","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":41,"name":"Category
+        41","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":40,"name":"Category
+        40","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":39,"name":"Category
+        39","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":38,"name":"Category
+        38","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":37,"name":"Category
+        37","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":36,"name":"Category
+        36","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":35,"name":"Category
+        35","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":34,"name":"Category
+        34","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":33,"name":"Category
+        33","created_at":1519584545,"updated_at":1519584545}],"total_entries":62,"per_page":30,"total_pages":3,"previous_page":null,"current_page":1,"next_page":2}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:20:46 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/articles/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2985bf67dfbcf1d3394defc000281f13"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '0794b34a-2192-4861-97d6-2c7037ef59a5'
+      X-Runtime:
+      - '0.013062'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"article","id":7,"title":"Article 7","category":7,"created_at":1519584545,"updated_at":1519584545}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:39:35 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2554b03242361d02d234bcda38e58131"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 00c09640-cb94-49c8-aaf2-504630462190
+      X-Runtime:
+      - '0.221770'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"list","data":[{"type":"category","id":1,"name":"Category 1","created_at":1519584544,"updated_at":1519584544},{"type":"category","id":2,"name":"Category
+        2","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":3,"name":"Category
+        3","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":4,"name":"Category
+        4","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":5,"name":"Category
+        5","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":6,"name":"Category
+        6","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":7,"name":"Category
+        7","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":8,"name":"Category
+        8","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":9,"name":"Category
+        9","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":10,"name":"Category
+        10","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":11,"name":"Category
+        11","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":12,"name":"Category
+        12","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":13,"name":"Category
+        13","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":14,"name":"Category
+        14","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":15,"name":"Category
+        15","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":16,"name":"Category
+        16","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":17,"name":"Category
+        17","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":18,"name":"Category
+        18","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":19,"name":"Category
+        19","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":20,"name":"Category
+        20","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":21,"name":"Category
+        21","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":22,"name":"Category
+        22","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":23,"name":"Category
+        23","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":24,"name":"Category
+        24","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":25,"name":"Category
+        25","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":26,"name":"Category
+        26","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":27,"name":"Category
+        27","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":28,"name":"Category
+        28","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":29,"name":"Category
+        29","created_at":1519584545,"updated_at":1519584545},{"type":"category","id":30,"name":"Category
+        30","created_at":1519584545,"updated_at":1519584545}],"total_entries":62,"per_page":30,"total_pages":3,"previous_page":null,"current_page":1,"next_page":2}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:39:36 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/categories/7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin17.4.0 x86_64) ruby/2.5.0p0
+      Host:
+      - localhost:5000
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"30e75d3b7a9fe1e2f01bc51a5591ddb9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ad6fda48-1726-4d29-9a50-91a2ea959253
+      X-Runtime:
+      - '0.020579'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"type":"category","id":7,"name":"Category 7","created_at":1519584545,"updated_at":1519584545}'
+    http_version: 
+  recorded_at: Sun, 04 Mar 2018 12:54:48 GMT
 recorded_with: VCR 4.0.0

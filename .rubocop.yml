@@ -112,3 +112,6 @@ Style/GuardClause:
 RSpec/DescribeClass:
   Exclude:
     - 'spec/integration/**/*'
+
+Naming/PredicateName:
+  Enabled: false

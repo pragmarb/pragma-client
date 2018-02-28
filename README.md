@@ -56,12 +56,11 @@ module BlogService
     self.base_url = '/categories'
     
     # This assumes you have a `by_category` filter on /articles.
-    has_many Article, filter: :by_category
+    has_many :articles
   end
   
   class Article < Resource
-    # This assumes you have an expandable `category` property.
-    belongs_to Category, property: :category 
+    belongs_to :category
   end
 end
 ```
@@ -78,9 +77,6 @@ category = BlogService::Category.retrieve('test-category')
 category.articles.each do |article|
   puts article.title
 end
-
-# Create a new category:
-category = BlogService::Category.create(name: 'My Category')
 
 # Create a new article in the category:
 category.articles.create(
