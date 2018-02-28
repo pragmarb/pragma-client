@@ -116,7 +116,6 @@ module Pragma
 
         # Deletes an instance of the resource by ID.
         #
-        #
         # @param [String|Integer] id the ID of the resource to patch
         # @param [Hash] params params to forward to the API
         # @param [Hash] headers headers to forward to the API
