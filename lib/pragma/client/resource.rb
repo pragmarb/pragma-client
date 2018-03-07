@@ -23,7 +23,7 @@ module Pragma
         #   @return [Symbol|String] The parameter to use to specify the page number. The default
         #     is +:page+.
         #
-        # @!attribute [rw] per_page_param
+        # @!attribute [rw] per_page_param
         #   @return [Symbol|String] The parameter to use to specify the number of items per page.
         #     The default is +:per_page+.
         attr_writer :root_url, :base_path, :page_param, :per_page_param
@@ -42,6 +42,20 @@ module Pragma
 
         def per_page_param
           @per_page_param ||= :per_page
+        end
+
+        def associations
+          @associations ||= {}
+        end
+
+        private
+
+        def belongs_to(property)
+          associations[property.to_sym] = Association.new(self, :belongs_to, property)
+        end
+
+        def has_many(property)
+          associations[property.to_sym] = Association.new(self, :has_many, property)
         end
       end
 
@@ -135,20 +149,16 @@ module Pragma
       #
       # @return [Object] what the method returns
       def method_missing(method, *args) # rubocop:disable Style/MethodMissing
-        method = method.to_s
-
-        if method.end_with?('=')
-          self.class.class_eval do
-            define_method(method) do |val|
-              @data[method.delete_suffix('=')] = val
-            end
-          end
+        method_body = if method.to_s.end_with?('=')
+          proc { |value| @data[method.to_s.delete_suffix('=')] = value }
+        elsif self.class.associations[method]
+          proc { loaded_associations[method] ||= self.class.associations[method].load(self) }
         else
-          self.class.class_eval do
-            define_method(method) do
-              @data[method]
-            end
-          end
+          proc { @data[method.to_s] }
+        end
+
+        self.class.class_eval do
+          define_method(method, &method_body)
         end
 
         send(method, *args, &block)
@@ -166,6 +176,12 @@ module Pragma
       # @see #method_missing
       def respond_to_missing?(_method, _include_private = false)
         true
+      end
+
+      private
+
+      def loaded_associations
+        @loaded_associations ||= {}
       end
     end
   end

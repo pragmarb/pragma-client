@@ -62,4 +62,28 @@ RSpec.describe 'Client Integration' do
       expect(article.title).to eq('New title')
     end
   end
+
+  describe 'belongs_to proxy' do
+    it 'loads the parent record' do
+      expect(BlogApi::Article.retrieve(7).category.id).to eq(7)
+    end
+  end
+
+  describe 'has_many proxy' do
+    describe '.all' do
+      it 'returns the children of the resource' do
+        expect(BlogApi::Category.retrieve(3).articles.all.to_a.size).to eq(1)
+      end
+    end
+
+    describe '.create' do
+      it 'creates a child of the resource' do
+        article = BlogApi::Category.retrieve(1).articles.create(title: 'Hello world')
+        expect(article.to_h).to match(a_hash_including(
+          'category' => 1,
+          'title' => 'Hello world'
+        ))
+      end
+    end
+  end
 end
