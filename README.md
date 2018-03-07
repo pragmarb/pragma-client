@@ -1,5 +1,10 @@
 # Pragma::Client
 
+[![Build Status](https://travis-ci.org/pragmarb/pragma-client.svg?branch=master)](https://travis-ci.org/pragmarb/pragma-client)
+[![Dependency Status](https://gemnasium.com/badges/github.com/pragmarb/pragma-client.svg)](https://gemnasium.com/github.com/pragmarb/pragma-client)
+[![Coverage Status](https://coveralls.io/repos/github/pragmarb/pragma-client/badge.svg?branch=master)](https://coveralls.io/github/pragmarb/pragma-client?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/986b54b1951aef56ce0e/maintainability)](https://codeclimate.com/github/pragmarb/pragma-client/maintainability)
+
 Welcome to Pragma::Client, a gem for implementing clients for Pragma-based APIs.
 
 The clients you can build with this gem are very similar to [Stripe's Ruby client](https://github.com/stripe/stripe-ruby)
